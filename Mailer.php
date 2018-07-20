@@ -18,12 +18,13 @@ use Comely\IO\Mailer\Agents\EmailAgentInterface;
 use Comely\IO\Mailer\Agents\Sendmail;
 use Comely\IO\Mailer\Messages\Message;
 use Comely\IO\Mailer\Messages\Sender;
+use Comely\Kernel\Extend\ComponentInterface;
 
 /**
  * Class Mailer
  * @package Comely\IO\Mailer
  */
-class Mailer
+class Mailer implements ComponentInterface
 {
     /** @var EmailAgentInterface */
     private $agent;
