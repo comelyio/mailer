@@ -137,7 +137,7 @@ class Message
         $boundaries[] = "--Comely_B3" . $uniqueId;
 
         // Headers
-        $headers[] = !empty($this->sender->name) ?
+        $headers[] = $this->sender->name ?
             sprintf('From: %1$s <%2$s>', $this->sender->name, $this->sender->email) :
             sprintf('From:<%1$s>', $this->sender->email);
         $headers[] = sprintf('Subject: %1$s', $this->subject);
