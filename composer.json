@@ -13,6 +13,9 @@
     "php": ">=7.1.0",
     "comelyio/comely-kernel": "*"
   },
+  "suggest": {
+    "ext-fileinfo": "For attachments to work properly"
+  },
   "autoload": {
     "psr-4": {
       "Comely\\IO\\Mailer\\": ""
